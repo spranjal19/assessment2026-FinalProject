@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELLE BLOOM - Premium Flower Boutique</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .slide {
+            position: absolute;
+            inset: 0;
+            opacity: 0;
+            transition: opacity 1s ease;
+            background-size: cover;
+            background-position: center;
+        }
+        .slide.active {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo"><h1>ELLE <span>BLOOM</span></h1></div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="flowers.html">Our Flowers</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="offers.html">Offers</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="slider">
+            <div class="slide active">
+                <img src="rose.jpg" alt="Luxurious Red Rose Bouquet">
+                <div class="slide-content">
+                    <h2>Timeless Elegance</h2>
+                    <p>Handcrafted flower arrangements for every occasion</p>
+                    <a href="flowers.html" class="btn">Shop Our Collection</a>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="lavender.jpg" alt="Beautiful Lavender Flowers">
+                <div class="slide-content">
+                    <h2>Calm & Serenity</h2>
+                    <p>Fresh lavender and soothing floral scents</p>
+                    <a href="flowers.html" class="btn">Explore Lavender</a>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="lily.jpg" alt="Elegant White Lily Arrangement">
+                <div class="slide-content">
+                    <h2>Pure Beauty</h2>
+                    <p>Exquisite lilies and premium seasonal flowers</p>
+                    <a href="flowers.html" class="btn">Discover More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="slider-controls" style="position:absolute; bottom:40px; right:40px; z-index:20;">
+            <button class="prev" style="background:rgba(0,0,0,0.6); color:white; border:none; width:50px; height:50px; margin:5px; font-size:24px; border-radius:50%; cursor:pointer;">❮</button>
+            <button class="next" style="background:rgba(0,0,0,0.6); color:white; border:none; width:50px; height:50px; margin:5px; font-size:24px; border-radius:50%; cursor:pointer;">❯</button>
+        </div>
+    </header>
+
+    <section class="welcome">
+        <div class="container">
+            <h2>Welcome to ELLE BLOOM</h2>
+            <p style="text-align:center; max-width:800px; margin:0 auto 4rem; font-size:1.2rem;">
+                Kathmandu's most elegant premium flower boutique. Fresh roses, lavender, lilies, daisies, tulips and more.
+            </p>
+            <div class="features">
+                <div class="feature-card">
+                    <img src="rose.jpg" alt="Roses">
+                    <h3>Signature Roses</h3>
+                    <p>Red, Pink, White & Exotic varieties</p>
+                </div>
+                <div class="feature-card">
+                    <img src="lily.jpg" alt="Lilies">
+                    <h3>Elegant Lilies</h3>
+                    <p>Casablanca, Oriental & Stargazer</p>
+                </div>
+                <div class="feature-card">
+                    <img src="lavender.jpg" alt="Lavender">
+                    <h3>Calming Lavender</h3>
+                    <p>Fresh & dried lavender arrangements</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col"><h3>ELLE BLOOM</h3><p>Premium Flower Boutique</p></div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="flowers.html">Our Flowers</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="offers.html">Offers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <p> Kathmandu, Nepal</p>
+                    <p>Phone: +977 9876543210</p>
+                    <p>Email: <a href="mailto:info@ellebloom.com.np">info@ellebloom.com.np</a></p>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <a href="https://www.instagram.com" target="_blank">Instagram</a> | 
+                    <a href="https://www.facebook.com" target="_blank">Facebook</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 ELLE BLOOM. All Rights Reserved. | <a href="sitemap.html">Sitemap</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
